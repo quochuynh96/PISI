@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="~/Content/img/fav.png">
+    <meta name="author" content="codepixer">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta charset="UTF-8">
+    <title>English for Coder</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500i" rel="stylesheet">
+
+    @Styles.Render("https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css")
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/Content/css/css")
+    @Styles.Render("~/Content/css/bootstrap")
+    @Styles.Render("~/Content/css/theme")
+    @Styles.Render("~/Content/scss")
+
+    <style>
+        #header {
+                height: 55px;
+                padding: 5px 0;
+                position: fixed;
+                left: 0;
+                top: 0;
+                right: 0;
+                transition: all 0.5s;
+                z-index: 997;
+                background-color: #3383bd;
+            }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div>
+            <div class="row align-items-center justify-content-between d-flex mb-3">
+                <div id="logo">
+                    <a href="@Url.Action("Home","Index")"><img src="~/Content/img/logo.png" alt="" title="" /></a>
+                </div>
+                <nav id="nav-menu-container">
+                    <ul class="nav-menu">
+                        <li class="menu-active"><a href="@Url.Action("Home","Index")">Home</a></li>
+                        <li><a href="about.html">Word</a></li>
+                        <li><a href="courses.html">Contact</a></li>
+                    </ul>
+                </nav><!-- #nav-menu-container -->
+            </div>
+        </div>
+    </header>
+    <div  class="home-banner-area">
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+    </div>
+    </div>
+        <footer class="footer-area section-gap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-6 single-footer-widget">
+
+                    </div>
+                    <div class="col-lg-2 col-md-6 single-footer-widget">
+
+                    </div>
+                    <div class="col-lg-2 col-md-6 single-footer-widget">
+
+                    </div>
+                    <div class="col-lg-2 col-md-6 single-footer-widget">
+
+                    </div>
+                    <div class="col-lg-4 col-md-6 single-footer-widget">
+                        <h4>PTKY...</h4>
+                        <p>Sign up email to received new notification,</p>
+                        <div class="form-wrap" id="mc_embed_signup">
+                            <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                                  method="get" class="form-inline">
+                                <input class="form-control" name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address '"
+                                       required="" type="email">
+                                <button class="click-btn btn btn-default"><span class="lnr lnr-arrow-right"></span></button>
+                                <div style="position: absolute; left: -5000px;">
+                                    <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+                                </div>
+
+                                <div class="info"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom row align-items-center">
+                </div>
+            </div>
+        </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/Content/js")
+    @Scripts.Render("~/Content/js/vendor")
+    @RenderSection("scripts", required: false)
+    @Scripts.Render("https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js")
+</body>
+</html>

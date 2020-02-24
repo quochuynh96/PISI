@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+    <section class="relative">
+        <div class="container">
+            <div class="row fullscreen d-flex align-items-center justify-content-center">
+                <div class="banner-content col-lg-8 col-md-12">
+                    <h1 class="wow fadeIn" data-wow-duration="4s">ENGLISH FOR CODER </h1>
+                    <p class="text-white">
+                        “Language is the blood of the soul into which thoughts run and out of which they grow.”
+                    </p>
+
+                    <div class="input-wrap">
+                        <form method="post" action="@Url.Action("Search","Home")"  class="form-box d-flex justify-content-between">
+                            <!-- Có id="keywords" -->
+                            <input type="text" placeholder="Keywords" class="form-control" id="keyword" name="keyword" requireds>
+                            <button type="submit" class="btn search-btn">Search</button>
+                        </form>
+                    </div>
+                    <h4 class="text-white">Content</h4>
+
+                    <div class="courses pt-20">
+                        <a href="#" data-wow-duration="1s" data-wow-delay=".3s" class="primary-btn transparent mr-10 mb-10 wow fadeInDown">Vocabulary</a>
+                        <a href="#" data-wow-duration="1s" data-wow-delay=".6s" class="primary-btn transparent mr-10 mb-10 wow fadeInDown">Story</a>
+                        <a href="#" data-wow-duration="1s" data-wow-delay=".9s" class="primary-btn transparent mr-10 mb-10 wow fadeInDown">Idiom</a>
+                        <a href="#" data-wow-duration="1s" data-wow-delay="1.2s" class="primary-btn transparent mr-10 mb-10 wow fadeInDown">
+                            &ensp;Listening&ensp;
+                        </a>
+                        <a href="#" data-wow-duration="1s" data-wow-delay="1.5s" class="primary-btn transparent mr-10 mb-10 wow fadeInDown">&ensp;Talking&ensp;</a>
+                        <a href="#" data-wow-duration="1s" data-wow-delay="1.8s" class="primary-btn transparent mr-10 mb-10 wow fadeInDown">
+                            &emsp;Library&emsp;
+                        </a>
+                        <a href="#" data-wow-duration="1s" data-wow-delay="2.1s" class="primary-btn transparent mr-10 mb-10 wow fadeInDown">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rocket-img">
+            <img src="img/rocket.png" alt="">
+        </div>
+    </section>

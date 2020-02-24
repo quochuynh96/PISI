@@ -1,0 +1,52 @@
+#search-keywords{
+    border: 0px solid ;
+
+}
+#content-keywords{
+    max-height: 100%;
+    /* background-color: rgb(255, 255, 255); */
+    box-sizing: border-box;
+}
+#word_list{
+    max-height: 400px;
+    overflow-y: scroll;
+    padding: 0px;
+}
+#search{
+    
+}
+.search-widget{
+
+}
+li{
+    list-style-type: none;
+    line-height: 1.4em;
+    padding-left: 15px;
+}
+li:hover{
+    cursor: pointer;
+    color: rgb(251, 255, 0);
+}
+ul{
+    margin-top: 15px;
+}
+p{
+    position: relative;
+    left: 10px;
+    border-left: 5px solid gray ;
+}
+h3{
+    padding: 10px;
+    color: #2891e6;
+}
+i{
+    padding-left: 5px;
+    font-size: 12px;
+}
+img{
+    position: relative;
+    /* left: 40rem;
+    top: 2rem; */
+}
+
+

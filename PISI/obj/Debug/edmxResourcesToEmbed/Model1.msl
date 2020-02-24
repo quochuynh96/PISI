@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PISIModelStoreContainer" CdmEntityContainer="PISIEntities">
+    <EntitySetMapping Name="WORDs">
+      <EntityTypeMapping TypeName="PISIModel.WORD">
+        <MappingFragment StoreEntitySet="WORD">
+          <ScalarProperty Name="Word_ID" ColumnName="Word_ID" />
+          <ScalarProperty Name="Word_English" ColumnName="Word_English" />
+          <ScalarProperty Name="Word_IPA" ColumnName="Word_IPA" />
+          <ScalarProperty Name="Word_Vietnamese" ColumnName="Word_Vietnamese" />
+          <ScalarProperty Name="Word_SoundSimilar" ColumnName="Word_SoundSimilar" />
+          <ScalarProperty Name="Word_UrlImage" ColumnName="Word_UrlImage" />
+          <ScalarProperty Name="Word_UrlSound" ColumnName="Word_UrlSound" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
